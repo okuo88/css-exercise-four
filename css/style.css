@@ -1,4 +1,126 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+/* Mobile */
 body {
   background-color: #dadada;
-  font-size: 10px;
+  font-family: sans-serif;
+  font-size: 1em;
+  margin: 50px
+}
+
+.container {
+  margin: 20px auto;
+  width: 100%;
+}
+
+div {
+  background-color: #dadada;
+  margin: 1% 0;
+  padding: 10px;
+  float: left;
+  position: relative;
+  width:100%;
+  display: inline-block;
+}
+
+img {
+    width:  400px;
+    height: 300px;
+    margin-top: 5px;
+  }
+
+h1 {
+  font-family: inherit;
+  font-size: 1em;
+  margin: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h2 {
+font-family: serif;
+  font-size: 1.2em;
+  font-weight: 500;
+  position:absolute;
+  top:50px;
+  left:40px;
+}
+
+/* .Baku {
+width: 65%;
+}
+.london {
+width: 81.2%;
+}
+.Madrid {
+width: 64%;
+}
+.Rome {
+width: 64%;
+} */
+
+/* Tablet */
+@media screen and (min-width: 575px){
+  body {
+    background-color: #dadada;
+    font-family: sans-serif;
+    font-size: 1em;
+    margin: 50px;
+  }
+
+  .container {
+    margin: 50px auto;
+    /* width: 500px; */
+  }
+
+  div {
+    margin: 1%;
+    width:48%;
+    float: left;
+
+  }
+
+  img {
+      width:  300px;
+      height: 200px;
+      margin-top: 5px;
+    }
+
+  h1 {
+    font-family: inherit;
+    font-size: 1em;
+    margin: 50;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  h2 {
+  font-family: serif;
+    font-size: 1.1em;
+    font-weight: 500;
+    position:absolute;
+    top:40px;
+    left:40px;
+  }
+
+}
+
+
+/* Desktop */
+@media screen and (min-width: 800px){
+   div {
+    margin: 0%;
+    width: 18%;
+    margin-left: 50px;
+  }
+   h1 {
+    text-align: center;
+  }
+
+   img {
+      width:  150px;
+      height: 150px;
+    }
 }
